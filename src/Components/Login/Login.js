@@ -9,7 +9,6 @@ import {
 } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import "./Login.css"
-import LogNavs from '../LogNavs/LogNavs';
 
 const Login = () => {
   let navigate = useNavigate();
@@ -33,12 +32,11 @@ const Login = () => {
       Data.password !== "" &&
       Data.checkbox !== ""
     ) {
-      navigate("/");
+      navigate("/Home");
     }
   };
   return (
     <div className="bg-img">
-    <LogNavs/>
       <div>
         <div className="Margin">
           <h1 className="Login">Login</h1>

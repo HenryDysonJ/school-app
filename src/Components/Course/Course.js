@@ -8,6 +8,7 @@ import "./Course.css";
 
 const Course = () => {
   const course = useSelector((state) => state.ReducerComponent);
+
   let dispatch = useDispatch();
   useEffect(() => {
     dispatch(GET_COURSEAPI());
@@ -18,8 +19,7 @@ const Course = () => {
         <h1>Courses</h1>
         <hr />
         <div className="wrapper-scroll-y my-custom-scrollbar">
-          {course.course?.map((item,index) => {
-            // console.log(item.staffName,"couremap")
+          {course.course?.map((item, index) => {
             return (
               <tr className="table table-bordered table-striped mb-0">
                 <th key={index}>
@@ -37,32 +37,48 @@ const Course = () => {
                   aria-label=".form-select-md example "
                 >
                   <option selected>Staff Names</option>
+                 {/* {
+                  item.staffName?.map((lab,index)=>{
+                    let rescour = course.map(obj=> obj.staffName[0]);
+                    console.log(rescour,"resscourr")
+                    console.log("lab===>",lab)
+                    return(
+                      <option value="1">{lab.label}</option>
+                    )
+                  })
+                } */}
+                  {/* {
+                  item.staffName?.map((nam,index)=>{
+                    console.log("nam===>",nam)
+                    return(
+                      <option value="1">{nam.name}</option>
+                    )
+                  })
+                }
+                 {
+                  item.staffName?.map((val,index)=>{
+                    console.log("lab===>",val)
+                    return(
+                      <option value="1">{val.value}</option>
+
+                    )
+                  })
+                }
                   {
-                    item.staffName &&
-                    item.staffName.map((data,index)=>{
+                    item.staffName?.map((data,index)=>{
                       console.log(data,"couuurrrssee")
                       return(
                         <option value="1">{data}</option>
-                        // {
-                        //   data.value.map((value)=>{
-                        //     return(
-                        //       <option value="1">{value}</option>
-
-                        //     )
-                        //   })
-                        // }
-                        
+                       
                       )
                     })
-                  }
-                 
+                  } */}
                 </select>
               </tr>
             );
           })}
         </div>
       </div>
-      
     </div>
   );
 };
