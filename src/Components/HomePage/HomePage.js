@@ -10,9 +10,9 @@ const HomePage = () => {
   const handleClick = () => {
     navigate("/staff");
   };
-  const handleSubmit =()=>{
-    navigate("/student")
-  }
+  const handleSubmit = () => {
+    navigate("/student");
+  };
   return (
     <div className="Home">
       <div className="col-12 d-flex">
@@ -23,20 +23,32 @@ const HomePage = () => {
           <h1>Staff Page</h1>
           <hr />
           <div>
-            <img src="https://cdn.pixabay.com/photo/2015/03/03/07/29/staff-657056_960_720.jpg" height="110" width="400"/>
+            <img
+              src="https://cdn.pixabay.com/photo/2015/03/03/07/29/staff-657056_960_720.jpg"
+              height="110"
+              width="400"
+            />
           </div>
           <div className="button">
-          <Button onClick={handleClick} className="button">Go Staff page</Button>
+            <Button onClick={handleClick} className="button">
+              Go Staff page
+            </Button>
           </div>
         </div>
         <div className="col-4 card">
-        <h1>Student Page</h1>
+          <h1>Student Page</h1>
           <hr />
           <div>
-            <img src="https://www.kiddiematters.com/wp-content/uploads/2017/03/Depositphotos_61894645_original-1024x708.jpg" height="110" width="400"/>
+            <img
+              src="https://www.kiddiematters.com/wp-content/uploads/2017/03/Depositphotos_61894645_original-1024x708.jpg"
+              height="110"
+              width="400"
+            />
           </div>
           <div className="button">
-          <Button onClick={handleSubmit} className="button">Go Student page</Button>
+            <Button onClick={handleSubmit} className="button">
+              Go Student page
+            </Button>
           </div>
         </div>
       </div>

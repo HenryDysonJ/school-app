@@ -37,42 +37,17 @@ const Course = () => {
                   aria-label=".form-select-md example "
                 >
                   <option selected>Staff Names</option>
-                 {/* {
-                  item.staffName?.map((lab,index)=>{
-                    let rescour = course.map(obj=> obj.staffName[0]);
-                    console.log(rescour,"resscourr")
-                    console.log("lab===>",lab)
-                    return(
-                      <option value="1">{lab.label}</option>
-                    )
-                  })
-                } */}
-                  {/* {
-                  item.staffName?.map((nam,index)=>{
-                    console.log("nam===>",nam)
-                    return(
-                      <option value="1">{nam.name}</option>
-                    )
-                  })
-                }
-                 {
-                  item.staffName?.map((val,index)=>{
-                    console.log("lab===>",val)
-                    return(
-                      <option value="1">{val.value}</option>
+                  {item.staffName?.map((lab, index) => {
+                    let rescour = course.map((obj) => obj.staffName[0]);
+                    console.log(rescour, "resscourr");
+                    console.log("lab===>", lab);
+                    return <option value="1">{lab.label}</option>;
+                  })}
 
-                    )
-                  })
-                }
-                  {
-                    item.staffName?.map((data,index)=>{
-                      console.log(data,"couuurrrssee")
-                      return(
-                        <option value="1">{data}</option>
-                       
-                      )
-                    })
-                  } */}
+                  {item.staffName?.map((val, index) => {
+                    console.log("lab===>", val);
+                    return <option value="1">{val.value}</option>;
+                  })}
                 </select>
               </tr>
             );

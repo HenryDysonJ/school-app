@@ -8,7 +8,7 @@ import {
   FormCheck,
 } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-import "./Login.css"
+import "./Login.css";
 
 const Login = () => {
   let navigate = useNavigate();
@@ -114,12 +114,7 @@ const Login = () => {
               </Form.Group>
             </InputGroup>
             <div className="btnAlign">
-              <Button
-                className="center"
-                size="lg"
-                variant="dark"
-                type="submit"
-              >
+              <Button className="center" size="lg" variant="dark" type="submit">
                 Submit
               </Button>
             </div>
@@ -129,7 +124,4 @@ const Login = () => {
     </div>
   );
 };
-export default Login;                               
-
-
-
+export default Login;

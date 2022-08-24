@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Navbar, Container, FormControl, Button, Nav } from "react-bootstrap";
-import Offcanvas from 'react-bootstrap/Offcanvas';
-import "../LogNavs/LogNavs.css"
+import Offcanvas from "react-bootstrap/Offcanvas";
+import "../LogNavs/LogNavs.css";
 
 const LogNavs = () => {
   const [show, setShow] = useState(false);
@@ -13,7 +13,7 @@ const LogNavs = () => {
   };
   return (
     <div className="Navs">
-      <Navbar bg="dark" variant="dark" >
+      <Navbar bg="dark" variant="dark">
         <div>
           <Button variant="dark" onClick={handleShow}>
             <div className="menu"></div>
@@ -41,12 +41,13 @@ const LogNavs = () => {
               alt=""
               width="50"
               height="40"
-            />  
+            />
           </a>
         </div>
-        <Container >
+        <Container>
           <Navbar.Brand>
-            <h4 className="logo-title">Management</h4></Navbar.Brand>
+            <h4 className="logo-title">Management</h4>
+          </Navbar.Brand>
 
           <Nav className="me-auto">
             <Nav.Link href="/Home">Home</Nav.Link>
