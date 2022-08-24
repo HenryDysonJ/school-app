@@ -1,7 +1,5 @@
-import React, { useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { GET_API } from "../Redux/ActionType";
-import ReducerComponent from "../Redux/ReducerComponent";
+import React from "react";
+
 import "./Footer.css";
 import { BsFacebook, BsLinkedin } from "react-icons/bs";
 import { AiFillInstagram } from "react-icons/ai";
@@ -11,13 +9,7 @@ import { BsTelegram } from "react-icons/bs";
 import { Form, Button } from "react-bootstrap";
 
 const Footer = () => {
-    const api = useSelector((state) => state.ReducerComponent);
-    let dispatch = useDispatch();
-    let datas = api?.api;
-    console.log("footer", datas)
-    useEffect(() => {
-        dispatch(GET_API());
-    }, [dispatch]);
+   
     return (
         <div>
             <div className="footer">

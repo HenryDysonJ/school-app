@@ -33,7 +33,7 @@ const Login = () => {
       Data.password !== "" &&
       Data.checkbox !== ""
     ) {
-      navigate("/Home");
+      navigate("/");
     }
   };
   return (

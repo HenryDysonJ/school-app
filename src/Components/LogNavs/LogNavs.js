@@ -37,7 +37,7 @@ const LogNavs = () => {
         <div className="main">
           <a className="navbar-brand">
             <img
-              src="https://c4.wallpaperflare.com/wallpaper/126/447/757/panda-abstract-panda-fantasy-wallpaper-preview.jpg"
+              src="https://img.freepik.com/free-vector/large-school-building-scene_1308-32058.jpg?w=2000"
               alt=""
               width="50"
               height="40"
@@ -46,7 +46,7 @@ const LogNavs = () => {
         </div>
         <Container >
           <Navbar.Brand>
-            <h4 className="logo-title">MY_App</h4></Navbar.Brand>
+            <h4 className="logo-title">Management</h4></Navbar.Brand>
 
           <Nav className="me-auto">
             <Nav.Link href="/Home">Home</Nav.Link>

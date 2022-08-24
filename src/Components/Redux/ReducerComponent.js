@@ -10,10 +10,13 @@ const ReducerComponent = (
 ) => {
   switch (action.type) {
 
-    case ActionType.GET_API:
-      console.log(action,"hslakhfk");
-
-      return { ...state, api: action.data };
+    case ActionType.GET_COURSEAPI:
+      console.log(action.data,"hslakhfk");
+      return { ...state,course:action.data};
+    case ActionType.GET_STAFFAPI:
+      return {...state,staff:action.data};
+    case ActionType.GET_STUDENTAPI:
+      return {...state,student:action.data}
     default:
       return state;
   }

@@ -1,0 +1,25 @@
+th{
+    margin-left:1rem;
+}
+h1{
+    font-weight: 950;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: darkgray;
+    font-style: italic;
+}
+td{
+    margin: 5px;
+    background-color: cadetblue;
+}
+.my-custom-scrollbar {
+    position: relative;
+    height: 200px;
+    overflow: auto;
+    }
+    .table-wrapper-scroll-y {
+    display: block;
+    }
+    .lable{
+        font-weight: 600;
+        
+    }
